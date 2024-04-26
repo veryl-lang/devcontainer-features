@@ -1,0 +1,19 @@
+{
+    "name": "Verilator",
+    "id": "verilator",
+    "version": "1.0.0",
+    "description": "Install pre-built binary of Verilator",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}
