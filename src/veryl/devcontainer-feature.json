@@ -2,7 +2,7 @@
     "name": "Veryl",
     "id": "veryl",
     "version": "1.0.0",
-    "description": "",
+    "description": "Veryl: A modern hardware description language",
     "options": {
         "version": {
             "default": "latest",
