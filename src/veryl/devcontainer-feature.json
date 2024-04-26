@@ -1,0 +1,19 @@
+{
+    "name": "Veryl",
+    "id": "veryl",
+    "version": "1.0.0",
+    "description": "",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}
