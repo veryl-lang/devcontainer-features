@@ -14,14 +14,13 @@ ensure_nanolayer nanolayer_location "v0.5.4"
 
 . /etc/os-release
 
-echo "${ID}"
-echo "${VERSION_ID}"
+ASSET_REGEX="verilator-${ID}-${VERSION_ID}.zip"
 
 $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/gh-release:1.0.25" \
-    --option repo='veryl-lang/verilator-package' --option binaryNames='verilator' --option version="$VERSION"
+    --option repo='veryl-lang/verilator-package' --option binaryNames='verilator' --option version="$VERSION" --option assetRegex="$ASSET_REGEX"
     
 
 
