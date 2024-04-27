@@ -12,6 +12,10 @@ set -e
 # of the script
 ensure_nanolayer nanolayer_location "v0.5.4"
 
+. /etc/os-release
+
+echo '${ID}'
+echo '${VERSION_ID}'
 
 $nanolayer_location \
     install \
