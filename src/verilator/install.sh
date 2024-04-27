@@ -12,6 +12,8 @@ set -e
 # of the script
 ensure_nanolayer nanolayer_location "v0.5.4"
 
+VERILATOR_VERSION="$VERSION"
+
 . /etc/os-release
 
 ASSET_REGEX="verilator-${ID}-${VERSION_ID}.zip"
@@ -20,7 +22,7 @@ $nanolayer_location \
     install \
     devcontainer-feature \
     "ghcr.io/devcontainers-contrib/features/gh-release:1.0.25" \
-    --option repo='veryl-lang/verilator-package' --option binaryNames='verilator' --option version="$VERSION" --option assetRegex="$ASSET_REGEX"
+    --option repo='veryl-lang/verilator-package' --option binaryNames='verilator' --option version="$VERILATOR_VERSION" --option assetRegex="$ASSET_REGEX"
     
 
 
